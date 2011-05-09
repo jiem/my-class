@@ -1,4 +1,4 @@
-# my.common.js
+# my.class.js
 
 Probably the fastest JS class system out there. 100% no wrappers, same perfs as hand-written pure JS classes.
 
@@ -65,7 +65,7 @@ See [how My.js classes achieve better perfs] (http://myjs.fr/my-class/).
         },
 
         wakeUp: function() {
-          console.log('Wake up! We have to change the world today!');
+          console.log('Wake up!');
         }
 
       });
@@ -77,13 +77,13 @@ See [how My.js classes achieve better perfs] (http://myjs.fr/my-class/).
     })();
 
     var sylvester = new myLib.Dreamer('Sylvester', 30, 'eating Tweety');
-    sylvester.sayHello(); //log "Hello from Sylvester!"
-    sylvester.dream(); //log "I dream of eating Tweety!"
+    sylvester.sayHello(); //log "Hello from Sylvester! I dream of eating Tweety!"
+    sylvester.wakeUp(); //log "Wake up!"
 
 
 ## Private methods
 
- See the section "Private fields and methods" of [my article] (http://myjs.fr/my-class/).
+ See the section "Private fields and methods" of [this post] (http://myjs.fr/my-class/).
 
 
 ## Add methods to a class
@@ -103,15 +103,8 @@ See [how My.js classes achieve better perfs] (http://myjs.fr/my-class/).
 ## Implement classes
 
      myLib.ImaginaryTraveler = my.Class({
-
-      travel: function() {
-        console.log('Traveling on a carpet!');
-      },
-
-      crossOceans: function() {
-        console.log('Saying hi to Moby Dick!');
-      }
-
+      travel: function() { console.log('Traveling on a carpet!'); },
+      crossOceans: function() { console.log('Saying hi to Moby Dick!'); }
     });
 
     (function() {
@@ -139,7 +132,7 @@ See [how My.js classes achieve better perfs] (http://myjs.fr/my-class/).
     aladdin.wakeUp();
     aladdin.sayHello();
 
-## Afraid to forget the `new` operator
+## Afraid to forget the `new` operator?
 
     var Person = my.Class({
 
