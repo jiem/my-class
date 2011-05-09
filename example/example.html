@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://myjs.fr/my-class/my.class.min.js"></script>
+
+<!----------------------------------------------------------------------------->
+<script>
+
+(function() {
+
+  var Person = my.Class({
+    constructor: function(name) {
+      this.name = name;
+    },
+    sayHello: function() {
+      console.log('Hello from ' + this.name + '!');
+    }
+  })
+
+  var Dreamer = my.Class(Person, {
+    constructor: function(name, dream) {
+      Dreamer.Super.call(this, name);
+      this.dream = dream;
+    },
+    sayDream: function() {
+      console.log('I dream of ' + this.dream + '!');
+    }
+  });
+
+  var sylvester = new Dreamer('Sylvester', 'eating Tweety');
+  sylvester.sayHello();
+  sylvester.sayDream();
+
+  alert('See this page source & open your JS console');
+
+})();
+
+</script>    
+<!----------------------------------------------------------------------------->
+
+</head>
+
+<body></body>
+
+</html>
