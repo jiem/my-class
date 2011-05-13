@@ -2,9 +2,13 @@
 
 Probably the fastest JS class system out there. 100% no wrappers, same perfs as hand-written pure JS classes.
 
+* [instantiation perfs] (http://jsperf.com/moo-resig-ender-my)
+* [inheritance perfs - calling super constructor] (http://jsperf.com/moo-resig-ender-my/2)
+* [inheritance perfs - calling super method] (http://jsperf.com/moo-resig-ender-my/3)
+
 See a little [demo] (http://myjs.fr/my-class/example/example.html).  
 
-My.js class system is not only a class implementation, it's also a JS class design.
+My.js class system is not only a class implementation, it's mostly a class design.
 
 See [how My.js classes achieve better perfs] (http://myjs.fr/my-class/).
 
