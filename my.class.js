@@ -49,7 +49,7 @@
       extend(Class, extension.STATIC, override);
       delete extension.STATIC;
     }
-    extend(Class.prototype, extension, override)
+    extend(Class.prototype, extension, override);
   };
 
   //============================================================================
