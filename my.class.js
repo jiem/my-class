@@ -1,13 +1,23 @@
-(function() {
-
-  my = {};
+/*globals define:true, window:true, module:true*/
+(function () {
+  // Namespace object
+  var my = {};
+  // Return as AMD module or attach to head object
+  if (typeof define !== 'undefined')
+    define([], function () {
+      return my;
+    });
+  else if (typeof window !== 'undefined')
+    window.my = my;
+  else
+    module.exports = my;
 
   //============================================================================
   // @method my.Class
   // @params body:Object
   // @params SuperClass:function, ImplementClasses:function..., body:Object
   // @return function
-  my.Class = function() {
+  my.Class = function () {
 
     var len = arguments.length;
     var body = arguments[len - 1];
@@ -44,16 +54,16 @@
   //============================================================================
   // @method my.extendClass
   // @params Class:function, extension:Object, ?override:boolean=true
-  var extendClass = my.extendClass = function(Class, extension, override) {
+  var extendClass = my.extendClass = function (Class, extension, override) {
     if (extension.STATIC) {
       extend(Class, extension.STATIC, override);
       delete extension.STATIC;
     }
-    extend(Class.prototype, extension, override)
+    extend(Class.prototype, extension, override);
   };
 
   //============================================================================
-  var extend = function(obj, extension, override) {
+  var extend = function (obj, extension, override) {
     var prop;
     if (override === false) {
       for (prop in extension)
