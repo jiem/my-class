@@ -55,6 +55,7 @@
   // @method my.extendClass
   // @params Class:function, extension:Object, ?override:boolean=true
   var extendClass = my.extendClass = function (Class, extension, override) {
+    if(typeof override !== false){override = true;}
     if (extension.STATIC) {
       extend(Class, extension.STATIC, override);
       delete extension.STATIC;
