@@ -10,7 +10,7 @@ See a little [demo] (http://myjs.fr/my-class/example/example.html).
 
 My.js class system is not only a class implementation, it's mostly a class design.
 
-See [how My.js classes achieve better perfs] (http://myjs.fr/my-class/).
+See [how My.js classes achieve better perfs] (http://jiem.github.io/my-class/).
 
 
 ## Create a class
@@ -87,7 +87,7 @@ See [how My.js classes achieve better perfs] (http://myjs.fr/my-class/).
 
 ## Private methods
 
- See the section "Private fields and methods" of [this post] (http://myjs.fr/my-class/).
+ See the section "Private fields and methods" of [this post] (http://jiem.github.io/my-class/).
 
 
 ## Add methods to a class
