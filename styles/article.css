@@ -1,0 +1,153 @@
+#docPanel {
+  position: relative; top: 0px; left: 420px; width: 685px; padding-bottom: 200px;
+  background: white; border-left: 1px solid #ccc;
+}
+
+#docPanel * { background: white; }
+
+#docPanel a { text-decoration: none; outline: none; color: black; }
+
+#docPanel a:hover { color: green; text-decoration: underline; }
+
+#docPanel pre { font-size: 12px; }
+
+#docPanel code, #docPanel pre.inline {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Monaco, Consolas, Lucida console, monospace;
+}
+
+#docPanel pre.inline {
+  font-weight: normal;
+}
+
+#docPanel pre.inline span {
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+/******************************************************************************/
+#docPanel .title { padding: 10px 0 20px 47px; font: bold italic 26px monospace; }
+#docPanel .title span { border-bottom: 1px solid #0a0; padding-bottom: 2px;}
+
+
+/******************************************************************************/
+#docPanel .name { 
+  margin: 6px 0px;
+  padding: 15px 0px 0px 23px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Monaco, Lucida Console, monospace;
+}
+
+#docPanel .name > a {  
+  background-repeat: no-repeat;
+  padding-left: 24px;
+  color: black;
+}
+
+#docPanel .constructor .name > a {
+  background-image: url("../images/constructor13.png");
+  background-position: 1px 5px;
+}
+
+#docPanel .field .name > a {
+  background-image: url("../images/field12.png");
+  background-position: 1px 5px;
+}
+
+#docPanel .event .name > a {
+  background-image: url("../images/event14.png");
+  background-position: 1px 5px;
+}
+
+#docPanel .method .name > a {
+  background-image: url("../images/method12.png");
+  background-position: 1px 5px;
+}
+
+
+#docPanel .descr {
+  padding: 0px 25px 10px 47px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  color: #2c2c2c;
+}
+
+#docPanel .seeSnippet { position: relative; left: 589px; margin-bottom: 5px; }
+
+#docPanel .seeSnippet > span {
+  padding-right: 30px;
+  background: white url(../images/arrow14.png) no-repeat 55px 1px;
+   font-family: Monaco, Lucida Console, monospace;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+}
+
+#docPanel .seeSnippet > span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+#docPanel .separator {
+  width: 607px;
+  margin-left: 47px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;  
+}
+
+#docPanel .separator2 {
+  width: 607px;
+  margin-left: 47px;
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
+#docPanel .snippet {
+  display: none;
+  width: 580px;  
+  padding: 3px 5px 5px 35px;
+  margin: -1px 0px 0px 35px;  
+  border: 1px solid #0a0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  font-size: 14px;
+  background: #f9fff9;
+}
+
+#docPanel .snippet * {
+  background: #f9fff9
+}
+
+#docPanel .demo .name {
+  margin-left: 23px;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+#docPanel .demo iframe {
+  margin-left: 47px;
+}
+
+#docPanel .demo .seeSnippet {
+  position: relative; left: 45px; margin-bottom: 15px; margin-top: -10px;
+}
+
+#docPanel .demo .seeSnippet > span {
+  padding-left: 20px;
+  background: white url(../images/arrow14.png) no-repeat 0px 1px;
+}
+
+
+#docPanel .blue {
+  color: blue;
+}

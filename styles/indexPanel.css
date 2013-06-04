@@ -1,0 +1,110 @@
+/******************************************************************************/
+#indexPanel a {
+  text-decoration: none;
+  color: black;
+  background-repeat: no-repeat;
+}
+
+#indexPanel a:hover { text-decoration: underline; }
+
+/******************************************************************************/
+#indexPanel ul {
+  position: relative;
+  font: normal 13px Georgia;
+  list-style-type: none;
+  padding-left: 19px;
+  overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#indexPanel > ul {
+  margin: 0px 0px 0px -5px;
+}
+
+#indexPanel {
+  overflow: auto;
+}
+
+/******************************************************************************/
+#indexPanel li { margin-top: 4px; }
+#indexPanel li.package > a, #indexPanel li.class > a { padding-left: 13px; }
+#indexPanel .constructor > a, #indexPanel .event > a,
+#indexPanel .field > a, #indexPanel .method > a, #indexPanel .subset > a {
+  margin-left: 14px;
+  padding-left: 20px;
+}
+
+/******************************************************************************/
+#indexPanel .plus {
+  background-image: url(../images/plus_11.png);
+  background-position: 0px 3px;  
+}
+
+#indexPanel .minus {
+  background-image: url(../images/minus_11.png);
+  background-position: 0px 3px;
+}
+
+/******************************************************************************/
+#indexPanel .package > a > span, #indexPanel .class > a > span {
+  padding-left: 21px;  
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+
+#indexPanel .package > a > span {
+  background-image: url(../images/package15.png);
+  background-position: 0px 1px;
+}
+
+#indexPanel .class > a > span {
+  background-image: url(../images/class13.png);
+  background-position: 1px 1px;
+}
+
+#indexPanel .inherited > a {
+  background-image: url(../images/plus_11.png);
+  background-position: 1px 1px;
+}
+
+#indexPanel .constructor > a {
+  background-image: url("../images/constructor11.png");
+  background-position: 1px 3px;
+}
+#indexPanel .event > a {
+  background-image: url("../images/event12.png");
+  background-position: 1px 3px;
+}
+#indexPanel .field > a {
+  background-image: url("../images/field10.png");
+  background-position: 1px 4px;
+}
+#indexPanel .method > a {
+  background-image: url("../images/method10.png");
+  background-position: 1px 3px;
+}
+
+#indexPanel .subset > a > span {
+  background: none;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
+/******************************************************************************/
+#indexPanel .constructor span.hideArgs, #indexPanel .method span.hideArgs {
+  display: none;
+}
+
+#indexPanel .border {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 5px;
+  height: 100%;
+  z-index: 1000;
+  background:-webkit-gradient(linear, top left, bottom left,
+    from(rgba(255,255,255,1)), color-stop(20%, rgba(0,0,0,1)),
+    color-stop(80%, rgba(0,55,0,1)), to(rgba(255,255,255,1)));
+}

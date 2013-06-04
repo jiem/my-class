@@ -1,0 +1,169 @@
+#docPanel {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  font-weight: bold;
+  width: 680px;
+}
+
+#docPanel code {
+  font-weight: bold;
+}
+
+/******************************************************************************/
+#docPanel .package, #docPanel .class,
+#docPanel .constructor, #docPanel .field, #docPanel .method, #docPanel .event  {
+  border: 1px solid #e0e0e0;
+  border-bottom: 1px solid white;
+  padding: 9px;
+  cursor: pointer;
+}
+
+#docPanel .package:hover, #docPanel .class:hover,
+#docPanel .constructor:hover, #docPanel .event:hover, #docPanel .field:hover, #docPanel .method:hover  {
+  /*border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;*/
+  border: 1px solid #bbddbb;
+  /*background: #fafafa;*/
+  background: #f2fff2;
+}
+
+#docPanel .noTop {
+  border-top: 1px solid white;
+}
+
+/******************************************************************************/
+#docPanel .last {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+/******************************************************************************/
+#docPanel .head {
+  position: relative;
+  font: bold 25px sketch;
+  color: green;
+  text-align: center;
+  margin: 25px 0px 35px 0px;
+  z-index: 100;
+}
+
+/******************************************************************************/
+#docPanel .name {
+  padding-left: 23px;
+  padding-bottom: 5px;
+  font: bold 18px Georgia;
+  font-family: Georgia, Freeserif, Times, serif;
+  background-repeat: no-repeat;
+}
+
+#docPanel .descr {
+  padding: 0px 20px 0 23px;
+  font-weight: normal;
+  font-family: georgia;
+  font-size: 14px;
+}
+
+/******************************************************************************/
+#docPanel .package .name {
+  background-image: url("../images/package16.png");
+  background-position: 0px 6px;
+}
+
+#docPanel .class .name {
+  background-image: url("../images/class15.png");
+  background-position: 1px 5px;
+}
+
+#docPanel .constructor .name {
+  background-image: url("../images/constructor13.png");
+  background-position: 1px 6px;
+}
+#docPanel .event .name {
+  background-image: url("../images/event14.png");
+  background-position: 1px 7px;
+}
+#docPanel .field .name {
+  background-image: url("../images/field12.png");
+  background-position: 1px 7px;
+}
+#docPanel .method .name {
+  background-image: url("../images/method12.png");
+  background-position: 1px 7px;
+}
+
+
+/******************************************************************************/
+#examplesPanel {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 1000px;
+}
+
+
+#examplesPanel .head {
+  position: relative;
+  font: bold 25px sketch;
+  color: green;
+  text-align: center;
+  margin: 25px 0px 35px 0px;
+  z-index: 1000;
+}
+
+#examplesPanel .example {
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#disclaimer {
+  text-align: left;
+  margin-bottom: 60px;
+  border: none;
+  font: bold 18px Georgia;
+  padding-top: 9px;
+  width: 800px;
+}
+
+#disclaimer a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#disclaimer ul {
+  font-weight: normal;
+  margin-top: 6px;
+}
+
+#disclaimer li {
+  font-weight: normal;
+  margin-top: 6px;
+}
+
+#examplesPanel .example .title {
+  text-align: center;
+  font: bold 18px Georgia;
+  padding-top: 9px;
+  margin: 10px;
+  /*border-bottom: 1px solid #e0e0e0;*/
+}
+
+#examplesPanel .code {
+  background: #FBF9EA;
+}
+
+#examplesPanel .example iframe {
+  font: bold 20px Georgia;  
+  padding: 10px 0px;
+  width: 400px;
+  margin: 15px auto 15px auto;
+  border: 1px solid #e0e0e0;
+  border: 1px solid #bbddbb;
+  background: #f2fff2;
+}

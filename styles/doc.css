@@ -1,0 +1,81 @@
+#doc code { font-weight: bold }
+
+/******************************************************************************/
+#doc .package, #doc .class,
+#doc .constructor, #doc .field, #doc .method  {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid #ccc;
+  padding: 6px 0px 24px 30px;
+  cursor: pointer;
+}
+
+#doc .head:hover, #doc .package:hover, #doc .class:hover,
+#doc .constructor:hover, #doc .field:hover, #doc .method:hover  {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #eef;
+}
+
+/******************************************************************************/
+#doc .last {
+  border-bottom: 1px solid #ccc;
+}
+
+#doc .first:hover {
+  border-top: 1px solid white;
+}
+
+/******************************************************************************/
+#doc .head {
+  font-weight: bold;
+  font-size: 26px;
+  padding: 4px 0px 4px 33px;
+  border-bottom: 1px solid #ccc;
+}
+
+/******************************************************************************/
+#doc .name {
+  padding-left: 23px;
+  padding-bottom: 10px;
+  font: bold 20px Georgia;
+  background-repeat: no-repeat;
+}
+
+#doc .descr {
+  padding: 0px 20px 0 23px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/******************************************************************************/
+#doc .package .name {
+  background-image: url("../images/package16.png");
+  background-position: 0px 6px;
+}
+
+#doc .class .name {
+  background-image: url("../images/class15.png");
+  background-position: 1px 5px;
+}
+
+#doc .constructor .name {
+  background-image: url("../images/constructor13.png");
+  background-position: 1px 6px;
+}
+#doc .field .name {
+  background-image: url("../images/field12.png");
+  background-position: 1px 7px;
+}
+#doc .method .name {
+  background-image: url("../images/method12.png");
+  background-position: 1px 7px;
+}
+
+/******************************************************************************/
+#doc .selected {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid white;
+}

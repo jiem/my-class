@@ -1,0 +1,52 @@
+/******************************************************************************/
+#index > ul { margin-left: 3px }
+
+/******************************************************************************/
+#index ul {
+  position: relative;
+  font: bold 13px Georgia;
+  list-style-type: none;
+  padding-left: 17px;
+  overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+/******************************************************************************/
+#index li { margin-top: 4px; }
+#index li > a { padding-left: 19px; }
+
+/******************************************************************************/
+#index > ul a {
+  color: black;
+  background-repeat: no-repeat;
+}
+
+#index .package > a {
+  background-image: url("../images/package15.png");
+  background-position: -1px 1px;
+}
+#index .class > a {
+  background-image: url("../images/class13.png");
+  background-position: -1px 1px;
+}
+#index .constructor > a {
+  background-image: url("../images/constructor11.png");
+  background-position: 0px 3px;
+}
+#index .field > a {
+  background-image: url("../images/field10.png");
+  background-position: 0px 4px;
+}
+#index .method > a {
+  background-image: url("../images/method10.png");
+  background-position: 0px 4px;
+}
+
+/******************************************************************************/
+#index .method span, #index .constructor span { font-weight: normal }
+#index .newLine { margin-left: 40px }
+
+/******************************************************************************/
+#index a { text-decoration: none }
+#index a:hover { text-decoration: underline; }
